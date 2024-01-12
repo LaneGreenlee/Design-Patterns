@@ -1,4 +1,4 @@
 package strategy;
-public class OffenceBehavior {
-    
+public interface OffenceBehavior {
+    public String play();
 }
