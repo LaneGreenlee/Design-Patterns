@@ -1,4 +1,7 @@
 package strategy;
-public class ShootBehavior {
-    
+
+public class ShootBehavior implements OffenceBehavior {
+    public String play() {
+        return "shoots at goal";
+    }
 }
