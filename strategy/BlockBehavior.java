@@ -1,8 +1,18 @@
 package strategy;
 import java.util.Random;
 
+/**
+ * Class to implement the blocking behavior
+ * which belongs to the DefensiveBehavior type.
+ * @author Laneag
+ */
 public class BlockBehavior implements DefenceBehavior{
     
+    /**
+     * Method to randomize between three types of 
+     * blocking behaviors.
+     * @return a string corresponding to the blocking behavior
+     */
     public String play() {
         Random rand = new Random();
         int number = rand.nextInt(3)+1;

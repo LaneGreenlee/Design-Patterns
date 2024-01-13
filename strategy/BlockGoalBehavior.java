@@ -1,7 +1,19 @@
 package strategy;
 import java.util.Random;
 
+/**
+ * Class to define BlockGoalBehavior which implements Offense and defense 
+ * behaviors. Needs to implement two because of Goalie class using block 
+ * behavior for both defense and offense.
+ * @author Laneag
+ */
 public class BlockGoalBehavior implements OffenceBehavior, DefenceBehavior{
+
+    /**
+     * Method to implement the play interface.
+     * Randomizes between 4 different goal blocking behaviors.
+     * @return a string of blocking behavior.
+     */
     public String play() {
         Random rand = new Random();
         int number = rand.nextInt(4)+1;
