@@ -1,6 +1,11 @@
 package observer;
 import java.util.ArrayList;
 
+/**
+ * Class to implement the Observer interface in the form of the Cartel.
+ * Class tracks heisenburg and his whereabouts.
+ * @author Laneag
+ */
 public class Cartel implements Observer{
      public Subject cook;
      public ArrayList<Sighting> sightings;
