@@ -29,7 +29,7 @@ public class Cook implements Subject {
     }
 
     public void enterSighting(String location, String description, String accomplices) {
-        String[] elements = accomplices.split(",");
+        String[] elements = accomplices.split(", ");
         List<String> accompliceList = Arrays.asList(elements);
         ArrayList<String> listOfString = new ArrayList<String>(accompliceList);
         notifyObservers(location, description, listOfString);

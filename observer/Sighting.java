@@ -21,11 +21,7 @@ public class Sighting {
     }
 
     public String getAccomplices() {
-        String returnString = "";
-        for(String a : accomplices) {
-            returnString += a;
-        }
-        return returnString;
+        return String.join(", ",accomplices);
     }
 
 }

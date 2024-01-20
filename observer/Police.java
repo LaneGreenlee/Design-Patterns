@@ -18,7 +18,10 @@ public class Police implements Observer {
         locations.add(location);
         notes += "- "+description+"\n";
         for (String a : accomplices){
-            people.add(a);
+            if(people.contains(a))
+                continue;
+            else
+                people.add(a);
         }
     }
 
