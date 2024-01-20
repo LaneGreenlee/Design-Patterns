@@ -7,6 +7,7 @@ import java.util.List;
  * Class cook to implementy the Subject interface. This is
  * the class that will be obersved by adjacent classes, and is the
  * base class to keep track of the cook. 
+ * @author Laneag
  */
 public class Cook implements Subject {
     private String name;
