@@ -1,7 +1,7 @@
 package decorator;
 import java.util.ArrayList;
 
-public class Player {
+public abstract class Player {
     protected String name;
     protected ArrayList<String> lines;
 
@@ -15,10 +15,11 @@ public class Player {
     }
 
     public String toString() {
-        String visual = "##### "+getName()+" #####\n";
+        String visual = "";
         for (String line : lines) {
-            visual+=line+"\n";
+            visual+= line +"\n";
         }
-        return visual;
+
+        return "##### "+name+" #####\n"+visual;
     }
 }
