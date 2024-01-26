@@ -1,14 +1,28 @@
 package decorator;
 import java.util.ArrayList;
-
+/**
+ * Class used for equipping the player with a shield, sword,
+ * and/or armor. 
+ * @author Laneag
+ */
 public abstract class PlayerDecorator extends Player{
     private Player player;
 
+    /**
+     * Called when a PlayerDecorator is needed.
+     * @param player The player to be decorated.
+     */
     public PlayerDecorator(Player player) {
         super(player.lines, player.name);
         this.player = player;
     }
 
+    /**
+     * Method used to equip the player with a sword, shield, or armor.
+     * Iterates through and replaces lines that those would take up using character
+     * arrays.
+     * @param decor Pass the utility that you would like to give your Warrior.
+     */
     protected void integrateDecor(ArrayList<String> decor) {
         ArrayList<String> newWarrior = new ArrayList<>();
         int i = 0;
